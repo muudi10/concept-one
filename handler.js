@@ -2,7 +2,7 @@ const serverless = require("serverless-http");
 const express = require("express");
 const app = express();
 
-app.use('/home', require('./Clients'))
+
 app.use('/routes/app/charity', require('./routes/app/charity/List'))
 // app.get("/", (req, res, next) => {
 //   return res.status(200).json({

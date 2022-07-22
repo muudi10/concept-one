@@ -4,11 +4,9 @@ const router = express.Router()
     
    
     router.get("/", (req, res) => {
-      res.json(1);
+      res.json('Iam working ');
     });
-    router.get("/function2", (req, res) => {
-      res.json(2);
-    });
+ 
     router.post('/function3', (req, res)=>{
       res.status(200).json(req.body)
     })
